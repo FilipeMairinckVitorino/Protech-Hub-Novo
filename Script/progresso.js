@@ -10,12 +10,6 @@ const spanSemApostilas = document.querySelector("span#semApostilas")
 const tituloResultado = document.querySelector("h2#tituloResultado")
 const userSalvo = JSON.parse(localStorage.getItem("user"))
 
-document.querySelectorAll("form").forEach(form => {
-    form.addEventListener("submit", (event) => {
-        event.preventDefault()
-    })
-})
-
 if (userSalvo == null || userSalvo.userLv != "professor") {
     window.location.href = "login.html"
 } else {
