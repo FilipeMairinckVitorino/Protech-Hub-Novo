@@ -20,8 +20,6 @@ if (userSalvo == null || userSalvo.userLv != "professor") {
     window.location.href = "login.html"
 } else {
 
-    userViewer.innerHTML = userSalvo.CTR
-
     buttonBusca.addEventListener("click", async (event) => {
         event.preventDefault()
 
