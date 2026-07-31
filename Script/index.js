@@ -56,6 +56,12 @@ if (userSalvo == null){
         })
     })
 
+    document.querySelectorAll("img.apostila").forEach(element => {
+        element.addEventListener("click", ()=>{
+            element.nextElementSibling.click()
+        })
+    })
+    
 }
 
 // © 2026 Filipe Mairinck Vitorino. Todos os direitos reservados.
